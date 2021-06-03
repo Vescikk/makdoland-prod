@@ -1,0 +1,57 @@
+.orderSection{
+    height: 100vh; 
+    position: relative;
+    background: url(img/ordersec.svg);
+    background-position-y: 90%;   
+    background-position-x: 90%;     
+    background-size: 25%;    
+    background-repeat: no-repeat;
+border-top: 1px solid $main-orange ; 
+
+    &-price-box{  
+        text-align: center;
+        display: flex;
+        margin-top: 70px;    
+        flex-direction: column;
+        width: 100%;    
+
+    }
+    &-list{
+        display: flex;
+        flex-direction: row ;
+        text-align: center; 
+        justify-content: center;
+        flex-wrap: wrap;
+        & li{  
+            z-index: 1;
+            display: flex;
+        flex-direction: column; 
+            text-align: center;
+            list-style: none;
+            align-self: center; 
+            border-radius: 25px; 
+            margin: 20px 15px;  
+            padding: 10px 20px;  
+            height: 190px;        
+            width: 200px;  
+            -webkit-box-shadow: -2px 0px 19px -6px rgba(0,0,0,0.75); 
+            -moz-box-shadow: -2px 0px 19px -6px rgba(0,0,0,0.75);
+            box-shadow: -2px 0px 19px -6px rgba(0,0,0,0.75);
+            transition: transform 0.5s; 
+            cursor: pointer;
+             
+            &:hover{
+                transform: scale(1.1); 
+            } 
+        }
+        &-icon{ 
+            align-self: center;  
+            height: 98px;    
+        }
+    }
+    &-order{
+        margin-bottom: 20px; 
+    }
+} 
+
+
